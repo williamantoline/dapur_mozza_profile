@@ -21,8 +21,23 @@ body {
 }
 
 .container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.scrollable {
     box-sizing: border-box;
 }
+/* ::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
 .header {
     height: 320px;
     width: 100%;
