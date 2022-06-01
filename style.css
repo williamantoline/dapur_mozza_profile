@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 .header {
-    height: 240px;
+    height: 320px;
     width: 100%;
     background-image: url('public/asset/img/a2ba74fe-8557-498a-a783-e71f3c1e6695.jpeg');
     background-size: cover;
@@ -34,9 +34,9 @@
 .bg {
     background-color: black;
     width: 100%;
-    height: 240px;
+    height: 320px;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.45;
     position: absolute;
 }
 .header .logo {
@@ -69,8 +69,52 @@
     font-weight: 500;
 }
 
+.cta {
+    /* background-color: red; */
+    display: flex;
+    margin: 16px 0;
+}
+.cta a {
+    /* background-color: white; */
+    background-color: #F0996C;
+    width: 240px;
+    height: 60px;
+    margin-right: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.cta a .cta-button {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    /* background-color: brown; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.cta a .cta-button .icon {
+    margin-right: 12px;
+    /* background-color: cyan; */
+    display: flex;
+    
+}
+.cta a .cta-button .icon img{
+    width: 40px;
+}
+.cta a .cta-button .cta-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 .socmed-list {
-    padding: 2px 10px;
+    padding: 2px 10px 84px 10px;
     box-sizing: border-box;
     background-color: #f9f9f9;
 }
@@ -80,7 +124,7 @@
     color: #000000;
 }
 .socmed-list a .socmed {
-    padding: 12px 14px;
+    padding: 18px 14px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
